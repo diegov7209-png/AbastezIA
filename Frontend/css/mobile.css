@@ -1,0 +1,23 @@
+/* Estilos mobile-first (por defecto). El desktop se ajusta en desktop.css */
+
+.nav-desktop { display: none; }
+
+.nav-mobile {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  display: flex;
+  justify-content: space-around;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  padding: 8px 4px calc(8px + env(safe-area-inset-bottom, 0px));
+  z-index: 20;
+}
+.nav-mobile a {
+  display: flex; flex-direction: column; align-items: center; gap: 2px;
+  font-size: 0.68rem; color: var(--text-soft); padding: 4px 8px; border-radius: var(--radius-sm);
+}
+.nav-mobile a.active { color: var(--ink); }
+:root[data-theme="dark"] .nav-mobile a.active { color: var(--amber); }
+.nav-icon { font-size: 1.25rem; }
+
+.stat-grid { grid-template-columns: repeat(2, 1fr); }

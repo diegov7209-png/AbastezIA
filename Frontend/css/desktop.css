@@ -1,0 +1,25 @@
+/* A partir de 900px: sidebar-nav en el header y tablas más densas.
+   La app_outlet sigue siendo la misma; en fases futuras las listas
+   pueden cambiar a <table> real para escritorio si se desea. */
+
+@media (min-width: 900px) {
+  .nav-mobile { display: none; }
+
+  .app-header { padding-left: 32px; padding-right: 32px; gap: 32px; }
+  .nav-desktop { display: flex; gap: 4px; }
+  .nav-desktop a {
+    padding: 8px 14px; border-radius: 999px; font-size: 0.88rem; color: #C8CEDC;
+  }
+  .nav-desktop a.active { background: rgba(232, 163, 61, 0.18); color: var(--amber); }
+
+  .app-outlet { padding: 28px 32px 40px; }
+
+  .stat-grid { grid-template-columns: repeat(5, 1fr); }
+
+  .card-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+
+  .modal-backdrop { align-items: center; }
+  .modal { border-radius: var(--radius-md); }
+
+  .chat-screen { height: calc(100dvh - 160px); max-width: 720px; margin: 0 auto; }
+}
