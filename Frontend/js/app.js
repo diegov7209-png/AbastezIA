@@ -9,7 +9,8 @@ const App = (() => {
     { key: 'chat', label: 'Chat', icon: '💬' },
     { key: 'proveedores', label: 'Proveedores', icon: '🚚' },
     { key: 'productos', label: 'Productos', icon: '📦' },
-    { key: 'clientes', label: 'Clientes', icon: '🧾' }
+    { key: 'clientes', label: 'Clientes', icon: '🧾' },
+    { key: 'ia-dev', label: 'IA Dev', icon: '🛠️' }
   ];
 
   function updateNav(activeKey) {
@@ -51,6 +52,7 @@ const App = (() => {
     Router.register('productos', PageProductos);
     Router.register('clientes', PageClientes);
     Router.register('chat', PageChat);
+    Router.register('ia-dev', PageIADev);
     Router.register('notfound', { render: (el) => { el.innerHTML = '<p>Página no encontrada.</p>'; } });
 
     renderNav();
