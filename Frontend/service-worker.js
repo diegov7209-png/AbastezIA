@@ -5,7 +5,7 @@
  * completo con cola de sincronización es Fase 5 (ver docs/ARQUITECTURA.md).
  */
 
-const CACHE_NAME = 'distribuidora-ai-v1';
+const CACHE_NAME = 'distribuidora-ai-v2';
 const APP_SHELL = [
   './',
   './index.html',
@@ -24,6 +24,7 @@ const APP_SHELL = [
   './js/pages/productos.js',
   './js/pages/clientes.js',
   './js/pages/chat.js',
+  './js/pages/ia-dev.js',
   './icons/icon-192.png',
   './icons/icon-512.png'
 ];
